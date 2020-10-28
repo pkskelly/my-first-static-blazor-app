@@ -1,33 +1,13 @@
 {
   "routes": [
     {
-      "route": "/admin",
+      "route": "/api/*",
       "allowedRoles": ["authenticated"]
     },
     {
-      "route": "/",
+      "route": "/*",
       "serve": "/index.html",
       "statusCode": 200
-    },
-    {
-      "route": "/.auth/login/aad",
-      "statusCode": "404"
-    },
-    {
-      "route": "/.auth/login/facebook",
-      "statusCode": "404"
-    },
-    {
-      "route": "/login",
-      "serve": "/.auth/login/github"
-    },
-    {
-      "route": "/.auth/login/google",
-      "statusCode": "404"
-    },
-    {
-      "route": "/.auth/login/twitter",
-      "statusCode": "404"
     }
   ]
 }
